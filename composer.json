@@ -1,0 +1,26 @@
+{
+    "name": "nwidart/getfacebooktoken",
+    "description": "",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\GetFacebookToken\\Providers\\GetFacebookTokenServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\GetFacebookToken\\": ""
+        }
+    }
+}

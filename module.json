@@ -1,0 +1,13 @@
+{
+    "name": "GetFacebookToken",
+    "alias": "getfacebooktoken",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\GetFacebookToken\\Providers\\GetFacebookTokenServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
