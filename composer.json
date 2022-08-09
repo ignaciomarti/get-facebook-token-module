@@ -1,5 +1,5 @@
 {
-    "name": "ignaciomarti/getfacebooktoken",
+    "name": "ignaciomarti/getfacebooktoken-module",
     "description": "",
     "type": "laravel-module",
     "authors": [
