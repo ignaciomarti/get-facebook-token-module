@@ -12,9 +12,9 @@
 */
 
 Route::prefix('getfacebooktoken')->group(function() {
-    Route::get('/', 'GetFacebookTokenController@index');
+    Route::get('/', 'GetFacebookTokenController@index')->name('getfacebooktoken.index');
 
-    Route::get('/', 'GetFacebookTokenController@getToken');
+    Route::get('/redirect', 'GetFacebookTokenController@getToken')->name('getfacebooktoken.redirect');
 
-    Route::get('/token', 'GetFacebookTokenController@show');
+    Route::get('/token', 'GetFacebookTokenController@show')->name('getfacebooktoken.show');
 });

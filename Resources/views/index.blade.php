@@ -29,7 +29,7 @@
                         <div class="error-message">
                             <h3>Login with Facebook to get your Facebook Page's Token</h3>
 
-                            <a href="{{ route('facebooklogin') }}" class="btn btn-facebook btn-social">
+                            <a href="{{ route('getfacebooktoken.redirect') }}" class="btn btn-facebook btn-social">
                                 <i class="lni lni-facebook-filled"></i>
                                 Sign in with Facebook
                             </a>
