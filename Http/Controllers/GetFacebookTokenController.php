@@ -92,6 +92,6 @@ class GetFacebookTokenController extends Controller
 
     public function getToken()
     {
-        return Socialite::driver('facebook')->scopes(['manage_pages', 'pages_show_list'])->redirect();
+        return Socialite::driver('facebook')->scopes(['pages_show_list'])->redirect();
     }
 }
