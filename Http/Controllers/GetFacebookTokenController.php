@@ -54,7 +54,7 @@ class GetFacebookTokenController extends Controller
 
         $response = $http->get('https://graph.facebook.com/'. $user->id . '/accounts?access_token='. $user->token);
 
-        $data = json_decode($response->getBody()->getContents());
+        $data = json_decode($response->getBody()->getContents(), true);
 
         return view('getfacebooktoken::show', compact('data'));
     }
