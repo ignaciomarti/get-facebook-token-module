@@ -44,19 +44,18 @@ class GetFacebookTokenController extends Controller
      */
     public function show(Request $request)
     {
-        \Log::info($request);
         if($request->query('error_code') != null) {
             return view('getfacebooktoken::error');
         }
 
         $user = Socialite::driver('facebook')->scopes(['pages_show_list'])->user();
-        \Log::info($user);
+
         $http = new \GuzzleHttp\Client();
 
         $response = $http->get('https://graph.facebook.com/'. $user->id . '/accounts?access_token='. $user->token);
-        \Log::info($response);
+
         $data = json_decode($response->getBody()->getContents());
-        \Log::info($data);
+
         return view('getfacebooktoken::show', compact('data'));
     }
 
